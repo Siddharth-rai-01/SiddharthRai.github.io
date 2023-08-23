@@ -85,6 +85,7 @@ section {
 .home{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 9%;
     background: url('/images/mypic3.png') no-repeat;
     background-size: cover;
@@ -755,17 +756,58 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 991px) {
-    .header {
-        padding: 2rem 4%;
-    }
-    
-    section {
-        padding: 10rem 4% 2rem;
+@media (max-width: 1160px) {
+
+    .animate.home-img{
+        width: 58%;
     }
 
     .home {
         padding: 0 4%;
+        background: url("/images/mypic3-phone.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-imgHover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background: transparent;
+        transition: 3s;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    .animate.home-img{
+        width: 59%;
+    }
+    
+    .home {
+        padding: 0 4%;
+        background: url("/images/mypic3-phone2.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-imgHover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background: transparent;
+        transition: 3s;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
     }
 
     .footer {
@@ -775,7 +817,24 @@ section:nth-child(odd) .animate.scroll,
 
 @media (max-width: 850px) {
     .animate.home-img{
-        width: 55%;
+        width: 70%;
+    }
+
+    .home {
+        padding: 0 4%;
+        background: url("/images/mypic3-phone3.png") no-repeat;
+        background-size: cover;
+        background-position: auto;
+    }
+
+    .home-imgHover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background: transparent;
+        transition: 3s;
     }
 }
 
@@ -838,6 +897,35 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: .25s;
     }
 
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .5;
+        resize: both;
+    }
+}
+
+@media (max-width:750px) {
+    .animate.home-img{
+        width: 85%;
+    }
+
+    .home {
+        padding: 0 4%;
+        background: url("/images/mypic3-phone4.png") no-repeat;
+        background-size: cover;
+        background-position: auto;
+    }
+
+    .home-imgHover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 85%;
+        height: 100%;
+        background: transparent;
+        transition: 3s;
+    }
     .home-imgHover {
         pointer-events: none;
         background: var(--bg-color);
